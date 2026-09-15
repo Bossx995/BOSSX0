@@ -654,7 +654,18 @@ async function sendMenuPhotoReply(sock, jid, caption, options = {}) {
         message.jpegThumbnail = jpegThumbnail;
       }
 
-      result = await sock.sendMessage(jid, message);
+      result = await sock.sendMessage(jid, {
+  ...message,
+  templateButtons: [
+    {
+      index: 1,
+      urlButton: {
+        displayText: "📢 View Channel",
+        url: "https://whatsapp.com/channel/0029VbDqHfKKQuJMRHZzZX11"
+      }
+    }
+  ]
+});
 
     } catch (e) {
       logger.warn(
