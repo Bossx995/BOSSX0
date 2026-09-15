@@ -1113,7 +1113,7 @@ async function resolveMentionJids(sock, jid, participants) {
 async function sendWelcomeMessage(sock, jid, participants, groupName = "") {
   const mentions = await resolveMentionJids(sock, jid, participants);
   const caption = formatGroupMessage(getGroupWelcomeMessage(jid), mentions, groupName);
-  const configuredVideo = String(settings.welcomeVideo || config.WELCOME_VIDEO || "welcome.mp4");
+  const configuredVideo = String(config.WELCOME_VIDEO || settings.welcomeVideo || "welcome.mp4").trim();
   const videoPath = path.isAbsolute(configuredVideo)
     ? configuredVideo
     : path.join(__dirname, configuredVideo.replace(/^\.?[\\\/]/, ""));
@@ -1122,7 +1122,7 @@ async function sendWelcomeMessage(sock, jid, participants, groupName = "") {
   if (fs.existsSync(videoPath)) {
     try {
       return await sock.sendMessage(jid, {
-        video: fs.readFileSync(videoPath),
+        video: { url: videoPath },
         mimetype: "video/mp4",
         caption,
         mentions
