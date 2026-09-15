@@ -1528,7 +1528,8 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
 │ 👨‍💻 Developer: Mr bikramhacker
 │ 🤖 Account: ${getBotAccountName(sock)}
 │ 👑 ${config.OWNER_NAME}
-│
+╰━━━━━━━━━━━━━━━━━━━━━━╯
+╭─〔 ⚡ 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 〕
 │ 🧰 BASIC
 │ 🏓 ${getBotPrefix()}ping
 │ 📋 ${getBotPrefix()}menu
@@ -1540,8 +1541,8 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
 │ 🔧 ${getBotPrefix()}setprefix <prefix>
 │ 🔧 ${getBotPrefix()}prefix <prefix>
 │ 🔐 ${getBotPrefix()}mode private/public
-│
-│ 🛡️ SECURITY
+╰────────────────────
+╭─〔 🛡️ SECURITY 〕
 │ 📞 ${getBotPrefix()}anticall on/off
 │ 🤖 ${getBotPrefix()}antibot on/off
 │ ♻️ ${getBotPrefix()}antidelete on/off
@@ -1555,8 +1556,8 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
 │ 🔗 ${getBotPrefix()}antilink on/off
 │ 🤖 ${getBotPrefix()}botadd <number>
 │ 🗑️ ${getBotPrefix()}botdel <number>
-│
-│ 👥 GROUP
+╰────────────────────
+╭─〔 👥 GROUP 〕
 │ 🚪 ${getBotPrefix()}lft
 │ 👑 ${getBotPrefix()}atag
 │ 👑 ${getBotPrefix()}promote @user / reply
@@ -1581,29 +1582,28 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
 │ 🔒 ${getBotPrefix()}group close
 │ 🔓 ${getBotPrefix()}open
 │ 🔒 ${getBotPrefix()}close
-│
-│ 👋 WELCOME / GOODBYE
+╰────────────────────
+╭─〔 👋 WELCOME / GOODBYE 〕
 │ ✍️ ${getBotPrefix()}setwelcome <message>
 │ ✍️ ${getBotPrefix()}setgoodbye <message>
-│
-│ 🎵 MEDIA
+╰────────────────────
+╭─〔🎵 MEDIA 〕
 │ 🎧 ${getBotPrefix()}song <name>
 │ ⚠️ ${getBotPrefix()}vv3 (view-once bypass unavailable)
 │ 📢 ${getBotPrefix()}mwhatsapp (safe notification only)
 │ ▶️ ${getBotPrefix()}play <name>
 │ 📖 ${getBotPrefix()}gcstory (reply)
 │ 💻 ${getBotPrefix()}hack [1-100]
-│
-│ 👑 OWNER / SUDO
+╰────────────────────
+╭─〔 👑 OWNER / SUDO 〕
 │ 🔐 ${getBotPrefix()}setsudo <number> / reply
 │ 🗑️ ${getBotPrefix()}dlsudo <number> / reply
 │ 🤖 ${getBotPrefix()}autoreaction on/off
 │ 👑 ${getBotPrefix()}autoadmin on/off
 │ 🌙 ${getBotPrefix()}goodnight
 │ 🌙 ${getBotPrefix()}gn
-│
-│
-│ ⚡ BOSS X • YOUR BROTHER ♥️
+╰────────────────────
+│> ⚡ BOSS X • YOUR BROTHER ♥️
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`;
 
     try {
