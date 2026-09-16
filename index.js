@@ -1604,7 +1604,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
 │ 🌙 ${getBotPrefix()}gn
 ╰────────────────────
 > ⚡ BOSS X • YOUR BROTHER ♥️
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯`;
 
     try {
       // VIP menu card: keep the View channel button ONLY on .menu/.help.
