@@ -1635,7 +1635,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // .promote / .demote: group-admin command. Target can be mentioned or replied to.
   if (command === "promote" || command === "demote") {
     if (!isGroup(jid)) {
-      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}${command}  group।`);
+      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}${command} *𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
 
@@ -1702,7 +1702,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // .allpmte: demote all group admins except the bot and configured owner.
   if (command === "allpmte") {
     if (!isGroup(jid)) {
-      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}allpmte 😁`);
+      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
 
@@ -1756,7 +1756,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // .vgroup <time>: group-only announcement with all-member mentions.
   if (command === "vgroup") {
     if (!isGroup(jid)) {
-      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
     const requesterIsOwner = isOwner(sender) || isOwner(senderPn) || isSelfMessage;
@@ -1812,7 +1812,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // random group member to make the bot leave the group.
   if (command === "lft") {
     if (!isGroup(jid)) {
-      await sendBotReply(sock, jid, `❌ ${getBotPrefix()}❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+      await sendBotReply(sock, jid, `❌ ${getBotPrefix()}❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
     if (!isSelfMessage && !isOwner(sender) && !isOwner(senderPn)) {
@@ -1830,7 +1830,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // .atag: mention every group admin (not ordinary members).
   if (command === "atag") {
     if (!isGroup(jid)) {
-      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
     try {
@@ -1855,7 +1855,7 @@ ${kickOn ? "🚪 *৩টি warning পূর্ণ হওয়ায় আপনা
   // .gf: show useful information about the current group.
   if (command === "gf") {
     if (!isGroup(jid)) {
-      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+      await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       return;
     }
     try {
@@ -2014,7 +2014,7 @@ Remove: ${getBotPrefix()}dlsudo <number> অথবা reply করে ${getBotPr
         const value = args[1]?.toLowerCase();
         if (["antilink", "anti-link", "antiadmin", "antisticker"].includes(feature)) {
           if (!isGroup(jid)) {
-            await sendGroupOnlyReply(sock, jid, `❌ ${feature} ❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+            await sendGroupOnlyReply(sock, jid, `❌ ${feature} ❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
           } else if (!["on", "off"].includes(value)) {
             await sendBotReply(sock, jid, `Usage: ${getBotPrefix()}settings ${feature} on/off`);
           } else {
@@ -2032,7 +2032,7 @@ Remove: ${getBotPrefix()}dlsudo <number> অথবা reply করে ${getBotPr
       }
     } else if (command === "antistatus") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else {
         const sub = args[0]?.toLowerCase();
         const value = args[1]?.toLowerCase();
@@ -2056,7 +2056,7 @@ ${getBotPrefix()}antistatus kick on/off`);
       }
     } else if (["antiadmin", "antisticker"].includes(command)) {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, `❌ ${command} ❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+        await sendGroupOnlyReply(sock, jid, `❌ ${command} ❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       } else {
         const value = args[0]?.toLowerCase();
         if (!["on", "off"].includes(value)) {
@@ -2075,7 +2075,7 @@ ${getBotPrefix()}antistatus kick on/off`);
         await sendBotReply(sock, jid, `Usage: .${command} on/off`);
       } else if (command === "antilink") {
         if (!isGroup(jid)) {
-          await sendGroupOnlyReply(sock, jid, `❌ ${command} ❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+          await sendGroupOnlyReply(sock, jid, `❌ ${command} ❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
           return;
         }
         const enabled = value === "on";
@@ -2144,7 +2144,7 @@ ${getBotPrefix()}antistatus kick on/off`);
       }
     } else if (command === "kick") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else if (!(await isBotAdmin(sock, jid))) {
         await sendBotReply(sock, jid, "❌ Kick করতে bot-কে admin করতে হবে।");
       } else {
@@ -2174,7 +2174,7 @@ ${getBotPrefix()}antistatus kick on/off`);
       }
     } else if (["htag", "tagall", "totag"].includes(command)) {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else {
         const metadata = await sock.groupMetadata(jid);
         const mentions = (metadata.participants || []).map(p => p.id).filter(Boolean);
@@ -2210,7 +2210,7 @@ ${mentions.map((p, i) => `${i % 2 ? "⚡" : "👻"} @${baseNumber(p)}`).join("\n
       }
     } else if (command === "kickall") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else if (!(await isBotAdmin(sock, jid))) {
         await sendBotReply(sock, jid, "❌ Kickall করতে bot-কে admin করতে হবে।");
       } else {
@@ -2250,7 +2250,7 @@ ${mentions.map((p, i) => `${i % 2 ? "⚡" : "👻"} @${baseNumber(p)}`).join("\n
       }
     } else if (command === "linkreset" || command === "resetlink") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else if (!(await isBotAdmin(sock, jid))) {
         await sendBotReply(sock, jid, "❌ Link reset করতে bot-কে admin করতে হবে।");
       } else {
@@ -2266,7 +2266,7 @@ https://chat.whatsapp.com/${code}`);
       }
     } else if (command === "link" || command === "grouplink") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌ *ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌ *𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else if (!(await isBotAdmin(sock, jid))) {
         await sendBotReply(sock, jid, "❌ Group link দিতে bot-কে admin করতে হবে।");
       } else {
@@ -2280,7 +2280,7 @@ https://chat.whatsapp.com/${code}`);
       }
     } else if (command === "group" || command === "open" || command === "close") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else {
         let action = command;
         if (command === "group") action = args[0]?.toLowerCase();
@@ -2310,7 +2310,7 @@ https://chat.whatsapp.com/${code}`);
       }
     } else if (command === "setwelcome") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else {
         const value = cleanCustomMessage(argsRaw);
         if (!value) {
@@ -2331,7 +2331,7 @@ https://chat.whatsapp.com/${code}`);
       }
     } else if (command === "setgoodbye") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, "❌*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*");
+        await sendGroupOnlyReply(sock, jid, "❌*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*");
       } else {
         const value = cleanCustomMessage(argsRaw);
         if (!value) {
@@ -2354,7 +2354,7 @@ https://chat.whatsapp.com/${code}`);
       await sendBotReply(sock, jid, "🌙 Good night everyone! Sweet dreams 😴✨");
     } else if (command === "hack") {
       if (!isGroup(jid)) {
-        await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+        await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
         return;
       }
       const target = Math.max(1, Math.min(100, Number.parseInt(args[0] || "100", 10) || 100));
@@ -2391,7 +2391,7 @@ https://chat.whatsapp.com/${code}`);
       );
       await sendSong(sock, jid, args.join(" "));
     } else if (command === "gcstory") {
-      if (!isGroup(jid)) return void await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*ꪻꫝ꠸ᦓ ᥴꪮꪑꪑꪖꪀᦔ ᭙ꪮ᥅ᛕᦓ ꠸ꪀ ᧁ᥅ꪮꪊρ*`);
+      if (!isGroup(jid)) return void await sendGroupOnlyReply(sock, jid, `❌ ${getBotPrefix()}*𝓣𝓱𝓲𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭 𝔀𝓸𝓻𝓴𝓼 𝓲𝓷 𝓰𝓻𝓸𝓾𝓹*`);
       const ctx = getContextInfo(msg);
       if (!ctx.quotedMessage) return void await sendBotReply(sock, jid, `❌ আগে একটি photo/video/text/link message reply/quote করে ${getBotPrefix()}gcstory দিন।`);
 
